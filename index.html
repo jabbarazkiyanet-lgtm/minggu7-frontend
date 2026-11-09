@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleArisan — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">S</div>
+        <span>SimpleArisan<small>Kelola arisan lebih mudah</small></span>
+      </div>
+
+      <nav class="navigation">
+        <button class="nav-item active"><span>⌂</span>Dashboard</button>
+        <button class="nav-item"><span>♙</span>Data Anggota</button>
+        <button class="nav-item"><span>▤</span>Pembayaran</button>
+        <button class="nav-item"><span>▦</span>Jadwal Arisan</button>
+        <button class="nav-item"><span>★</span>Pemenang</button>
+      </nav>
+
+      <div class="profile">
+        <div class="avatar">A</div>
+        <div><strong>Admin Arisan</strong><small>Admin grup</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="page-heading">
+        <h1>Dashboard</h1>
+        <p>Selamat datang kembali di layanan manajemen arisan.</p>
+      </header>
+
+      <section class="welcome-card">
+        <div>
+          <h2>Arisan makin praktis bersama SimpleArisan</h2>
+          <p>Pantau anggota, kas, dan jadwal dalam satu tempat.</p>
+        </div>
+        <button class="primary-button" id="manageButton">Lihat jadwal</button>
+      </section>
+
+      <section class="stats">
+        <article class="stat-card">
+          <span class="stat-icon purple">♙</span>
+          <span class="stat-label">Total Anggota</span>
+          <div class="stat-bottom"><strong>24</strong><small>orang</small></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon green">▤</span>
+          <span class="stat-label">Dana Terkumpul</span>
+          <div class="stat-bottom"><strong>Rp 2.400.000</strong><small>terkumpul</small></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon orange">◷</span>
+          <span class="stat-label">Peserta Menunggu</span>
+          <div class="stat-bottom"><strong>18</strong><small>anggota</small></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon pink">●</span>
+          <span class="stat-label">Belum Membayar</span>
+          <div class="stat-bottom"><strong>6</strong><small>anggota</small></div>
+        </article>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="panel activity-panel">
+          <h2>Aktivitas pembayaran</h2>
+          <p class="panel-subtitle">Ringkasan pembayaran anggota terbaru.</p>
+
+          <div class="table">
+            <div class="table-row table-head">
+              <span>Nama anggota</span><span>Tanggal</span><span>Jumlah</span><span>Status</span>
+            </div>
+            <div class="table-row">
+              <strong>Alya Putri</strong><span>15 Mei 2024</span>
+              <strong>Rp 100.000</strong><span class="badge paid">Lunas</span>
+            </div>
+            <div class="table-row">
+              <strong>Bima Pratama</strong><span>14 Mei 2024</span>
+              <strong>Rp 100.000</strong><span class="badge paid">Lunas</span>
+            </div>
+            <div class="table-row">
+              <strong>Citra Lestari</strong><span>13 Mei 2024</span>
+              <strong>Rp 100.000</strong><span class="badge unpaid">Belum</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel schedule-panel">
+          <h2>Jadwal berikutnya</h2>
+          <div class="event">
+            <div class="date"><span>NOV</span><strong>15</strong></div>
+            <div><strong>Pengundian putaran ke-8</strong><small>Jumat, 15 November 2024</small></div>
+          </div>
+          <div class="event-detail">
+            <span>Lokasi</span>
+            <strong>Rumah Ibu Rina</strong>
+            <span>Waktu</span>
+            <strong>10.00 WIB</strong>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
